@@ -35,6 +35,7 @@ struct ContentView: View {
                 }.padding(.top, 50)
                 Spacer()
             }
+            .background(Color.gray)
         } sheet: { height in
             ScrollView {
                 VStack {
@@ -58,12 +59,6 @@ struct ContentView: View {
         }
         .sheetBackgroundColor(backgroundColor)
         .enableBlurEffect(enableBlur)
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                enableBlur.toggle()
-                backgroundColor = .clear
-            }
-        }
     }
 }
 
