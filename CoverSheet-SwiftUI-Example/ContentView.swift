@@ -19,7 +19,7 @@ struct ContentView: View {
     var backgroundColor: Color = .white
     
     var body: some View {
-        CoverSheetView(sheetManager) {
+        CoverSheetView(sheetManager, states: [.minimized, .normal, .full, .cover]) {
             VStack {
                 HStack {
                     Spacer()
@@ -59,6 +59,7 @@ struct ContentView: View {
         }
         .sheetBackgroundColor(backgroundColor)
         .enableBlurEffect(enableBlur)
+        .edgesIgnoringSafeArea(.bottom)
     }
 }
 

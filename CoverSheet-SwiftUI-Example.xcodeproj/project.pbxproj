@@ -11,7 +11,7 @@
 		BD016CC429B66D8300CD5330 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD016CC329B66D8300CD5330 /* ContentView.swift */; };
 		BD016CC629B66D8400CD5330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD016CC529B66D8400CD5330 /* Assets.xcassets */; };
 		BD016CC929B66D8400CD5330 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD016CC829B66D8400CD5330 /* Preview Assets.xcassets */; };
-		BD016CD129B66DE300CD5330 /* CoverSheet in Frameworks */ = {isa = PBXBuildFile; productRef = BD016CD029B66DE300CD5330 /* CoverSheet */; };
+		BD7A004129B6723900DD4D9C /* CoverSheet in Frameworks */ = {isa = PBXBuildFile; productRef = BD7A004029B6723900DD4D9C /* CoverSheet */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD016CD129B66DE300CD5330 /* CoverSheet in Frameworks */,
+				BD7A004129B6723900DD4D9C /* CoverSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 			);
 			name = "CoverSheet-SwiftUI-Example";
 			packageProductDependencies = (
-				BD016CD029B66DE300CD5330 /* CoverSheet */,
+				BD7A004029B6723900DD4D9C /* CoverSheet */,
 			);
 			productName = "CoverSheet-SwiftUI-Example";
 			productReference = BD016CBE29B66D8300CD5330 /* CoverSheet-SwiftUI-Example.app */;
@@ -117,7 +117,7 @@
 			);
 			mainGroup = BD016CB529B66D8300CD5330;
 			packageReferences = (
-				BD016CCF29B66DE300CD5330 /* XCRemoteSwiftPackageReference "CoverSheet" */,
+				BD7A003F29B6723900DD4D9C /* XCRemoteSwiftPackageReference "CoverSheet" */,
 			);
 			productRefGroup = BD016CBF29B66D8300CD5330 /* Products */;
 			projectDirPath = "";
@@ -289,6 +289,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.blkbox.CoverSheet-SwiftUI-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,6 +320,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.blkbox.CoverSheet-SwiftUI-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -347,7 +353,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BD016CCF29B66DE300CD5330 /* XCRemoteSwiftPackageReference "CoverSheet" */ = {
+		BD7A003F29B6723900DD4D9C /* XCRemoteSwiftPackageReference "CoverSheet" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/colinfwalsh/CoverSheet";
 			requirement = {
@@ -358,9 +364,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BD016CD029B66DE300CD5330 /* CoverSheet */ = {
+		BD7A004029B6723900DD4D9C /* CoverSheet */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BD016CCF29B66DE300CD5330 /* XCRemoteSwiftPackageReference "CoverSheet" */;
+			package = BD7A003F29B6723900DD4D9C /* XCRemoteSwiftPackageReference "CoverSheet" */;
 			productName = CoverSheet;
 		};
 /* End XCSwiftPackageProductDependency section */
