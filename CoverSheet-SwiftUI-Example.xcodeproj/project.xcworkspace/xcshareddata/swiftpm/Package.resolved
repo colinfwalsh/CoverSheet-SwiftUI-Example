@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "coversheet",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/colinfwalsh/CoverSheet",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a301f89ee821dd7b5ae31635a8fd0606fc7d4300"
+      }
+    }
+  ],
+  "version" : 2
+}
