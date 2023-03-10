@@ -11,7 +11,7 @@
 		BD016CC429B66D8300CD5330 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD016CC329B66D8300CD5330 /* ContentView.swift */; };
 		BD016CC629B66D8400CD5330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD016CC529B66D8400CD5330 /* Assets.xcassets */; };
 		BD016CC929B66D8400CD5330 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD016CC829B66D8400CD5330 /* Preview Assets.xcassets */; };
-		BD7A004129B6723900DD4D9C /* CoverSheet in Frameworks */ = {isa = PBXBuildFile; productRef = BD7A004029B6723900DD4D9C /* CoverSheet */; };
+		BD0B3BBA29BBB797000C2191 /* CoverSheet in Frameworks */ = {isa = PBXBuildFile; productRef = BD0B3BB929BBB797000C2191 /* CoverSheet */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD7A004129B6723900DD4D9C /* CoverSheet in Frameworks */,
+				BD0B3BBA29BBB797000C2191 /* CoverSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 			);
 			name = "CoverSheet-SwiftUI-Example";
 			packageProductDependencies = (
-				BD7A004029B6723900DD4D9C /* CoverSheet */,
+				BD0B3BB929BBB797000C2191 /* CoverSheet */,
 			);
 			productName = "CoverSheet-SwiftUI-Example";
 			productReference = BD016CBE29B66D8300CD5330 /* CoverSheet-SwiftUI-Example.app */;
@@ -117,7 +117,7 @@
 			);
 			mainGroup = BD016CB529B66D8300CD5330;
 			packageReferences = (
-				BD7A003F29B6723900DD4D9C /* XCRemoteSwiftPackageReference "CoverSheet" */,
+				BD0B3BB829BBB797000C2191 /* XCRemoteSwiftPackageReference "CoverSheet" */,
 			);
 			productRefGroup = BD016CBF29B66D8300CD5330 /* Products */;
 			projectDirPath = "";
@@ -353,7 +353,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BD7A003F29B6723900DD4D9C /* XCRemoteSwiftPackageReference "CoverSheet" */ = {
+		BD0B3BB829BBB797000C2191 /* XCRemoteSwiftPackageReference "CoverSheet" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/colinfwalsh/CoverSheet";
 			requirement = {
@@ -364,9 +364,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BD7A004029B6723900DD4D9C /* CoverSheet */ = {
+		BD0B3BB929BBB797000C2191 /* CoverSheet */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BD7A003F29B6723900DD4D9C /* XCRemoteSwiftPackageReference "CoverSheet" */;
+			package = BD0B3BB829BBB797000C2191 /* XCRemoteSwiftPackageReference "CoverSheet" */;
 			productName = CoverSheet;
 		};
 /* End XCSwiftPackageProductDependency section */

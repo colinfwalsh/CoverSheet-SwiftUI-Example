@@ -19,17 +19,21 @@ struct ContentView: View {
     var backgroundColor: Color = .white
     
     var body: some View {
-        CoverSheetView(sheetManager, states: [.minimized, .normal, .full, .cover]) {
+        CoverSheetView(sheetManager, states: [.collapsed, .normal, .full, .cover]) {
             VStack {
                 HStack {
                     Spacer()
-                    switch sheetManager.sheetState {
-                    case .minimized:
-                        Text("Minimized")
+                    switch sheetManager.currentState {
+                    case .collapsed:
+                        Text("Collapsed")
                     case .normal:
                         Text("Normal")
-                    default:
+                    case .full:
                         Text("Full")
+                    case .cover:
+                        Text("Cover")
+                    default:
+                        EmptyView()
                     }
                     Spacer()
                 }.padding(.top, 50)
@@ -41,18 +45,22 @@ struct ContentView: View {
                 VStack {
                     HStack {
                         Spacer()
-                        switch sheetManager.sheetState {
-                        case .minimized:
-                            Text("Minimized")
+                        switch sheetManager.currentState {
+                        case .collapsed:
+                            Text("Collapsed")
                         case .normal:
                             Text("Normal")
-                        default:
+                        case .full:
                             Text("Full")
+                        case .cover:
+                            Text("Cover")
+                        default:
+                            EmptyView()
                         }
                         Spacer()
                     }
                 }
-                .animation(.default, value: sheetManager.sheetState)
+                .animation(.default, value: sheetManager.currentState)
                 .frame(height: height)
             }
             .disabled(true)
@@ -60,6 +68,11 @@ struct ContentView: View {
         .sheetBackgroundColor(backgroundColor)
         .enableBlurEffect(enableBlur)
         .edgesIgnoringSafeArea(.bottom)
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                sheetManager.currentState = .normal
+            }
+        }
     }
 }
 
